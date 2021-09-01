@@ -95,7 +95,7 @@ reolveMe().then(
 
 ------------------------------------------------------------------
 Topic: promise catch and finally
-
+```
 resolveMe().then(
   (success) => {}
 
@@ -105,6 +105,6 @@ resolveMe().then(
 ).finally(
   () => {}
 )
-
+```
 
 
