@@ -1,6 +1,6 @@
 # TOPIC: PROMISES
 
-# Promise can be created using Promise Constructor
+* Promise can be created using Promise Constructor
 ```
 example: 
 let promise = new Promise((resolve,reject) => {
