@@ -1,8 +1,8 @@
-TOPIC: PROMISES
+# TOPIC: PROMISES
 
 # Promise can be created using Promise Constructor
 
-# example: 
+example: 
 let promise = new Promise((resolve,reject) => {
 //executer runs automatically.
 })
@@ -29,11 +29,12 @@ DEFINITION:
 6. Once a promise state reaches to fullfilled/rejected, it can't change to other state. In either of the state, the promise is  resolved.
 
 ------------------------------------------------------------------
-Topic: then() method:
+# Topic: then() method:
 
-# Is used to schedule a callback to be executed, when promie is   successfully resolved.
+* Is used to schedule a callback to be executed, when promise is successfully resolved.
 
-# then method takes two callback functions
+* then method takes two callback functions
+
 ex: promiseObject.then(onFulfilled, onRejected);
 
     onFulfilled -> is called if promise is fulfilled.
