@@ -19,7 +19,7 @@ DEFINITION:
 * After the executer job is completed, it calls resolve/reject.
 
 * resolve(value) => job is completed successfully.
-   reject(err) => error has occured.
+* reject(err) => error has occured.
 
 * The promise object retured by new Promise constructor has two internal
    properties.
