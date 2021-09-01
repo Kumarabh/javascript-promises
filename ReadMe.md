@@ -45,7 +45,6 @@ example: promiseObject.then(onFulfilled, onRejected);
 ----------------
 
 const resolveMe = (isCompleted) => {
-
     const customerInstance = {
         id: '10138484038',
         name: 'John Doe',
