@@ -11,22 +11,22 @@ DEFINITION:
 
 # Important Points:- 
 
-1. The function passed to new Promise is called the executor.
+* The function passed to new Promise is called the executor.
 
-2. When new Promise is created, executer runs automatically.
+* When new Promise is created, executer runs automatically.
 
-3. After the executer job is completed, it calls resolve/reject.
+* After the executer job is completed, it calls resolve/reject.
 
-4. resolve(value) => job is completed successfully.
+* resolve(value) => job is completed successfully.
    reject(err) => error has occured.
 
-5. The promise object retured by new Promise constructor has two internal
+* The promise object retured by new Promise constructor has two internal
    properties.
    
    state: "pending"/"fullfilled"/"rejected".
    result: undefined/resolve(value)/reject(error)
 
-6. Once a promise state reaches to fullfilled/rejected, it can't change to other state. In either of the state, the promise is  resolved.
+* Once a promise state reaches to fullfilled/rejected, it can't change to other state. In either of the state, the promise is  resolved.
 
 ------------------------------------------------------------------
 # Topic: then() method:
@@ -71,7 +71,7 @@ export {resolveMe}
 /scripts/app.js
 ---------------
 
-# Handeling fulfilled & rejected 
+* Handeling fulfilled & rejected 
 
 resolveMe().then(
   (success) => console.log(success)
@@ -80,13 +80,13 @@ resolveMe().then(
 )
 
 
-# Handeling fulfilled only
+* Handeling fulfilled only
 
 resolveMe().then(
   (value) => console.log(value);
 )
 
-# Handeling rejected case
+* Handeling rejected case
 
 reolveMe().then(
    undefined,
