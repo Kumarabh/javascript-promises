@@ -1,11 +1,12 @@
 # TOPIC: PROMISES
 
 # Promise can be created using Promise Constructor
-
+```
 example: 
 let promise = new Promise((resolve,reject) => {
 //executer runs automatically.
 })
+```
 ------------------------------------------------------------------
 DEFINITION:
 
@@ -34,16 +35,16 @@ DEFINITION:
 * Is used to schedule a callback to be executed, when promise is successfully resolved.
 
 * then method takes two callback functions
-
+```
 example: promiseObject.then(onFulfilled, onRejected);
-
+```
     onFulfilled -> is called if promise is fulfilled.
     onRejected -> is called if promise is rejected.
 
 
 /scripts/test.js    
 ----------------
-
+```
 const resolveMe = (isCompleted) => {
 
     const customerInstance = {
@@ -67,32 +68,33 @@ const resolveMe = (isCompleted) => {
 }
 
 export {resolveMe}
+```
 
 /scripts/app.js
 ---------------
 
 * Handeling fulfilled & rejected 
-
+```
 resolveMe().then(
   (success) => console.log(success)
   (reason) => console.log(reason)
 
 )
-
+```
 
 * Handeling fulfilled only
-
+```
 resolveMe().then(
   (value) => console.log(value);
 )
-
+```
 * Handeling rejected case
-
-reolveMe().then(
+```
+resolveMe().then(
    undefined,
    reason => console.log(reason)
 )
-
+```
 ------------------------------------------------------------------
 Topic: promise catch and finally
 ```
