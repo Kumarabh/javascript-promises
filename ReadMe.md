@@ -35,7 +35,7 @@ DEFINITION:
 
 * then method takes two callback functions
 
-ex: promiseObject.then(onFulfilled, onRejected);
+  promiseObject.then(onFulfilled, onRejected);
 
     onFulfilled -> is called if promise is fulfilled.
     onRejected -> is called if promise is rejected.
